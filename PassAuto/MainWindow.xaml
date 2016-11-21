@@ -1,0 +1,39 @@
+﻿<Window x:Class="PassAuto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        mc:Ignorable="d ignore"
+        Height="300"
+        Width="800.735"
+        Title="MVVM Light Application"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid x:Name="LayoutRoot" Margin="0,0,130,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="238*"/>
+            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="188*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Nfme" HorizontalAlignment="Left" Height="23" Margin="69,44,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nfme_Copy" HorizontalAlignment="Left" Height="23" Margin="69,72,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nfme_Copy1" HorizontalAlignment="Left" Height="23" Margin="69,100,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nfme_Copy2" HorizontalAlignment="Left" Height="23" Margin="69,128,0,0" TextWrapping="Wrap" Text="Марка машины" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nfme_Copy3" HorizontalAlignment="Left" Height="23" Margin="69,156,0,0" TextWrapping="Wrap" Text="Модель" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nfme_Copy4" HorizontalAlignment="Left" Height="23" Margin="69,184,0,0" TextWrapping="Wrap" Text="Гос номер" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Nfme_Copy5" HorizontalAlignment="Left" Height="23" Margin="69,16,0,0" TextWrapping="Wrap" Text="Организация" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="5,100,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1"/>
+
+
+
+    </Grid>
+</Window>
